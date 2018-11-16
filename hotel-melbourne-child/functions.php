@@ -20,3 +20,13 @@ $parent_style = 'parent-style';
 add_action( 'wp_enqueue_scripts', 'hotel_melbourne_child_enqueue_child_styles' );
 
 /*Scrivi qui le tue funzioni */
+
+add_action( 'after_setup_theme', 'hotel_melbourne_setup_marianna' ); 
+
+function hotel_melbourne_setup_marianna(){
+  require_once( get_stylesheet_directory() . '/theme_default_data.php');
+$melbourne_option= hotel_melbourne_theme_default_data_marianna(); 
+require( get_stylesheet_directory() . '/core-functions/option-panel/hotel-melbourne-option-setting.php' ); // for Option Panel
+
+}
+

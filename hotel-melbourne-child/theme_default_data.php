@@ -1,5 +1,5 @@
 <?php 
-function hotel_melbourne_theme_default_data()
+function hotel_melbourne_theme_default_data_marianna()
   	{
 	return $melbourne_option=array(
 	
