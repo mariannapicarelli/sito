@@ -26,6 +26,10 @@ function hotel_melbourne_theme_default_data()
 	'slider_image_title_three' => get_theme_mod('slider_image_title_three',__('melbourne Responsive','hotel-melbourne')),
 	'slider_image_description_three' => get_theme_mod('slider_image_description_three',__('Duis autem vel eum iriure dolor in hendrerit in vulputate.','hotel-melbourne')),
 	
+        'slider_image_four' => get_template_directory_uri().'/images/slide/slide4.jpg',
+	'slider_image_title_four' => get_theme_mod('slider_image_title_three',__('melbourne Responsive','hotel-melbourne')),
+	'slider_image_description_four' => get_theme_mod('slider_image_description_three',__('Duis autem vel eum iriure dolor in hendrerit in vulputate.','hotel-melbourne')),
+            
 	'slider_button_text' => get_theme_mod('slider_button_text',__('More Details!','hotel-melbourne')),
 	'slider_image_link' => '#',
 	'slider_button_tab' => 1,
@@ -47,6 +51,11 @@ function hotel_melbourne_theme_default_data()
 	'service_three_title'=>get_theme_mod('service_three_title',__('Easy to Customize','hotel-melbourne')),
 	'service_three_description' => get_theme_mod('service_three_description',__('Lorem Ipsum which looks reason able. The generated Lorem Ipsum is therefore always free.Lorem Ipsum which looks reason able. The generated Lorem Ipsum is therefore always free.','hotel-melbourne')),
 	
+          'service_four_icon' => 'fa-cogs',
+	'service_four_title'=>get_theme_mod('service_four_title',__('Easy to Customize','hotel-melbourne')),
+	'service_four_description' => get_theme_mod('service_four_description',__('Lorem Ipsum which looks reason able. The generated Lorem Ipsum is therefore always free.Lorem Ipsum which looks reason able. The generated Lorem Ipsum is therefore always free.','hotel-melbourne')),
+	  
+            
 	//Project Portfolio Section
 	'enable_home_portfolio' => 1,
 	'portfolio_title_one' => get_theme_mod('portfolio_title_one',__('Recent Works','hotel-melbourne')),
@@ -76,6 +85,15 @@ function hotel_melbourne_theme_default_data()
 	'portfolio_image_three_link' => '#',
 	'portfolio_three_new_tab' => 1,
 	
+          'upload_image_four' => get_template_directory_uri() .'/images/gallery/4.jpg',
+	'portfolio_image_four_title' => get_theme_mod('portfolio_image_four_title',__('melbourne Responsive','hotel-melbourne')),
+	'portfolio_price_four' => get_theme_mod('portfolio_price_four',__('10000.00$/-','hotel-melbourne')),
+	'portfolio_time_section_four' => get_theme_mod('portfolio_time_section_four',__('Per Hour','hotel-melbourne')),
+	'portfolio_button_text_four' => get_theme_mod('portfolio_button_text_four',__('View Room 3','hotel-melbourne')),
+	'portfolio_image_four_link' => '#',
+	'portfolio_four_new_tab' => 1,
+	  
+            
 	//Home Latest Blog Post
 	'home_blog_enabled' => 1,
 	'blog_heading_title' => get_theme_mod('blog_heading_title',__('Latest News','hotel-melbourne')),
