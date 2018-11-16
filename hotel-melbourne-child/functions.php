@@ -30,3 +30,6 @@ require( get_stylesheet_directory() . '/core-functions/option-panel/hotel-melbou
 
 }
 
+//Customizer
+	require( get_stylesheet_directory() . '/core-functions/customizer/customizer-header.php');
+

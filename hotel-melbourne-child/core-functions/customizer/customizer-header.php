@@ -1,6 +1,6 @@
 <?php
-add_action( 'customize_register', 'hotel_melbourne_header_customizer' );
-function hotel_melbourne_header_customizer( $wp_customize ) {
+add_action( 'customize_register', 'hotel_melbourne_header_customizer_marianna' );
+function hotel_melbourne_header_customizer_marianna( $wp_customize ) {
 wp_enqueue_style('melbourne-customizr', HOTEL_MELBOURNE_DIR_URI .'/css/customizr.css');
 
 	$wp_customize->get_setting( 'blogname' )->transport          = 'postMessage';
@@ -322,7 +322,7 @@ wp_enqueue_style('melbourne-customizr', HOTEL_MELBOURNE_DIR_URI .'/css/customizr
 		'priority'   => 165,
     )
 );
-class WP_slider_Customize_Control extends WP_Customize_Control {
+class WP_slider_Customize_Control_marianna extends WP_Customize_Control {
     public $type = 'new_menu';
     /**
     * Render the control's content.
@@ -419,7 +419,7 @@ $wp_customize->add_setting(
 		'type' => 'option',
     )	
 );
-$wp_customize->add_control( new WP_slider_Customize_Control( $wp_customize, 'melbourne_option[slider_pro]', array(	
+$wp_customize->add_control( new WP_slider_Customize_Control_marianna( $wp_customize, 'melbourne_option[slider_pro]', array(	
 		'label' => __('Discover melbourne Pro','hotel-melbourne'),
         'section' => 'slider_section_settings',
 		'setting' => 'melbourne_option[slider_pro]',
@@ -839,7 +839,7 @@ $wp_customize->add_control( new WP_slider_Customize_Control( $wp_customize, 'mel
     )
 );
 	
-	class WP_portfolio_Customize_Control extends WP_Customize_Control {
+	class WP_portfolio_Customize_Control_marianna extends WP_Customize_Control {
     public $type = 'new_menu';
     /**
     * Render the control's content.
@@ -863,7 +863,7 @@ $wp_customize->add_setting(
 		'type' => 'option',
     )	
 );
-$wp_customize->add_control( new WP_portfolio_Customize_Control( $wp_customize, 'melbourne_option[portfolio_pro]', array(	
+$wp_customize->add_control( new WP_portfolio_Customize_Control_marianna( $wp_customize, 'melbourne_option[portfolio_pro]', array(	
 		'label' => __('Discover melbourne Pro','hotel-melbourne'),
         'section' => 'home_portfolio',
 		'setting' => 'melbourne_option[portfolio_pro]',
@@ -953,7 +953,7 @@ $wp_customize->add_control( new WP_portfolio_Customize_Control( $wp_customize, '
 		 'choices' => array('2'=>__('2', 'hotel-melbourne'), '4'=>__('4', 'hotel-melbourne'), '6' => __('6','hotel-melbourne'), '8' => __('8','hotel-melbourne'),'10'=> __('10','hotel-melbourne'), '12'=> __('12','hotel-melbourne'),'14'=> __('14','hotel-melbourne'), '16' =>__('16','hotel-melbourne')),
 		));
 	
-	function melbourne_prefix_sanitize_layout( $news ) {
+	function melbourne_prefix_sanitize_layout_marianna( $news ) {
     if ( ! in_array( $news, array( 1,'category_news' ) ) )    
     return $news;
 }
