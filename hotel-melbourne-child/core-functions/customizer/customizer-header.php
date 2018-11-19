@@ -244,7 +244,7 @@ wp_enqueue_style('melbourne-customizr', HOTEL_MELBOURNE_DIR_URI .'/css/customizr
 			   array(
 				   'label'          => __( 'Upload Slider Image Four', 'hotel-melbourne' ),
 				   'section'        => 'slider_section_settings',
-				   'priority'   => 160,
+				   'priority'   => 165,
 			   )
 		   )
 	);
@@ -259,7 +259,7 @@ wp_enqueue_style('melbourne-customizr', HOTEL_MELBOURNE_DIR_URI .'/css/customizr
         'label'   => __('Slider Image Title Four', 'hotel-melbourne'),
         'section' => 'slider_section_settings',
         'type'    => 'text',
-		'priority'   => 161,
+		'priority'   => 166,
     ));
 	$wp_customize->add_setting('melbourne_option[slider_image_description_four]'
 		, array(
@@ -272,7 +272,7 @@ wp_enqueue_style('melbourne-customizr', HOTEL_MELBOURNE_DIR_URI .'/css/customizr
         'label'   => __('Slider Image three Description', 'hotel-melbourne'),
         'section' => 'slider_section_settings',
         'type'    => 'text',
-		'priority'   => 162,
+		'priority'   => 167,
     ));   
     // slider 4 fine
 	
